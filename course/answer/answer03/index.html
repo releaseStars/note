@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson03-健康平台</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="pos">
+            今天
+        </div>
+        <div class="btn"  style="display: flex" >
+            <div class="btnitem">
+                <img src="./img/count.png">
+            </div>
+            <div class="btnitem">
+                <img src="./img/file.png">
+            </div>
+        </div>
+    </div>
+    <div class="daylist">
+        <div>29</div>
+        <div>30</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>
+<style>
+    body{
+        width: 90%;
+        margin: auto;
+        background-color: rgb(244, 227, 255);
+    }
+
+    .daylist {
+        height: 200px;
+        width: 100%;
+
+        display: flex;
+
+        color: rgb(255, 255, 255); 
+        font-size: large; 
+        font-weight: 500;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-evenly;
+        align-items: center;     
+    }
+
+    .daylist>div {
+        height: 150px;
+        width: 70px;
+
+        display: flex;
+
+        background-color: rgb(158, 118, 231);
+        justify-content: center;
+        align-items: center; 
+        border-radius: 30px;
+    }
+
+    .head {
+        height: 100px;
+        width: 100%;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head>.btn{
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .head > .btn >div{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .head > .pos{
+        color: darkslateblue ; 
+        font-size: xxx-large; 
+        font-weight: 1000; 
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    img{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+</style>
